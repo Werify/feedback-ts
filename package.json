@@ -1,0 +1,50 @@
+{
+  "name": "@werify/feedback-ts",
+  "private": false,
+  "version": "1.2.0",
+  "type": "module",
+  "main": "./dist/feedback-ts.umd.cjs",
+  "module": "./dist/feedback-ts.js",
+  "types": "./dist/index.d.ts",
+  "license": "MIT",
+  "keywords": [
+    "feedback",
+    "comment",
+    "ts feedback",
+    "feedback service",
+    "Werify",
+    "feedback-ts",
+    "werify feedback"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/feedback-ts.js",
+      "require": "./dist/feedback-ts.umd.cjs"
+    }
+  },
+  "repository": {
+    "url": "https://github.com/Werify/feedback-ts",
+    "directory": "/src"
+  },
+  "bugs": {
+    "url": "https://github.com/Werify/feedback-ts/issues"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.5",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.0",
+    "vite-plugin-dts": "^2.3.0",
+    "vitest": "^0.30.1"
+  },
+  "dependencies": {
+    "happy-dom": "^9.9.2"
+  }
+}
